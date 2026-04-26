@@ -1,0 +1,51 @@
+/* src/index.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color tokens — dark theme */
+  --bg:           #0d0f10;
+  --card-bg:      #13161a;
+  --input-bg:     #0a0c0e;
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-inner: rgba(255, 255, 255, 0.04);
+  --text:         #e8eaed;
+  --muted:        #6b7280;
+  --muted-dim:    #3d4349;
+  --accent:       #63e6be;
+  --btn-text:     #0a1a14;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
